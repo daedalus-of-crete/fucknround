@@ -4,4 +4,8 @@ version = "0.1.0"
 description = "Hopefully we get something of a data pipeline here soon"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["requests"]
+dependencies = [
+    "loguru>=0.7.3",
+    "requests",
+    "rnet>=2.2.11",
+]
