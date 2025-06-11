@@ -5,6 +5,7 @@ description = "Hopefully we get something of a data pipeline here soon"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "beautifulsoup4>=4.13.4",
     "loguru>=0.7.3",
     "requests",
     "rnet>=2.2.11",

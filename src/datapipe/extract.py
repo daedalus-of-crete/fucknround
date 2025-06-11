@@ -23,7 +23,7 @@ class Extractor:
 
         self.blocking = BlockingClient()
         self.blocking.update(
-            impersonate-Impersonate.Firefox135,
+            impersonate=Impersonate.Firefox135,
             proxies=[
                 #Proxy.http(self.proxy),                
             ]
