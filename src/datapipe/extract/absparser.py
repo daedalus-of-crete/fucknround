@@ -1,16 +1,17 @@
 from bs4 import BeautifulSoup
+from datapipe.models.AbsProduct import AbsProduct
 
-with open("AmazonBestSellers6-10-2025.html", "r") as f:
-    soup = BeautifulSoup(f, "html.parser")
 
-# print(soup.title)
-# print(soup.find_all("div", class_="p13n-sc-uncoverable-faceout")[:3])
+# ******** Eventually ill need to edit this file and make a script
+# that can crawl the website and find all tags and such
+# but this will work for idk a month ***********
 
-def parseABS(data) {
-'''
-    This function takes in a page of html and parses Amazon Best
-    Sellers to spit out clean product info
-'''
+
+def parseABS(data):
+    '''
+        This function takes in a page of html and parses Amazon Best
+        Sellers to spit out clean product info
+    '''
     products = []
 
     # Find all product blocks (Amazon uses this class for items in best sellers)
@@ -31,4 +32,9 @@ def parseABS(data) {
      # Pretty print result
     from pprint import pprint
     pprint(products)
-}
+
+
+with open("AmazonBestSellers6-10-20251.html", "r") as f:
+    soup = BeautifulSoup(f, "html.parser")
+
+parseABS(soup)

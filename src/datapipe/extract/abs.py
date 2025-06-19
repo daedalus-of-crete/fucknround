@@ -32,7 +32,7 @@ print(f"bestsellers response: {dataPull.status_code}\n")
 # print(f"Content type: {dataPull.headers.get("Content-Type")}\n")
 # print(f"length: {len(dataPull.text)}")
 
-with open("AmazonBestSellers6-10-2025.html", "w", encoding="utf-8") as f:
+with open("AmazonBestSellers6-10-2025(1).html", "w", encoding="utf-8") as f:
     f.write(dataPull.text)
 
 def parseBS(page):
